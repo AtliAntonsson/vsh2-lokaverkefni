@@ -1,0 +1,48 @@
+Nafn: Atli Antonsson
+verkefni: verkefni 7 í VSH2A3DU
+þ.e.a.s undirbúningur lokaverkefnis, þarfagreining og verkáætlun
+
+1. 
+Hver er viðskiptavinurinn?
+
+Viðskiptavinurinn er hótel Þorskavík, sem er ímyndað hótel í ímynduðu sjávarþorpi á landsbyggðinni.
+
+Hverjar eru óskir hans um vefinn?
+
+Ungir athafnamenn í Þorskavík hafa verið að breyta breyta gamla kaupfélaginu í hótel.
+Þeir gera sér grein fyrir að til að markaðsetja hótelið er vefsíða alger nauðsyn.
+Á vefsíðuna á að vera hægt að finna allar helstur upplýsingar um hótelið ásamt myndum.
+Auk þess vilja þeir að hægt verði að bóka herbergi beint á vefnum.
+Þeir vilja auk þess að vefurinn aðgengilegur fyrir þann vaxandi fjölda ferðamanna,
+sem leitar upplýsina í snjallsíma eða á spjaldtölvu.
+
+Hver er markhópur vefsins?
+
+Markhópurinn er íslenskir og útlenskir ferðamenn og jafnframt ferðaskrifstofur sem bóka fyrir ferðamenn.
+
+
+2.
+Innihaldslisti (hvað á að vera á vefnum?):
+-forsíða með mynd af hótelinu og helstum upplýsingum um það, sögu hússins o.fl.
+-síða um hvernig maður kemst á staðinn.
+-síða þar sem hægt er að bóka og jafnframt sjá verðskrá.
+-myndagallerí, þar sem hægt er að sjá myndir af herbergjunum.
+
+3.
+Lýsing á gagnvirkni, svo sem pöntunarform.
+
+Á síðunni verður hægt að bóka herbergi. Það er gert í nokkrum skrefum.
+Fyrst þarf að prófa hvort dagsetningarnar eru lausar.
+Svo þarf að skrá upplýsingar um kaupanda og greiðslukortaupplýsingar.
+Það þarf að sannreyna að kreditkortaupplýsingarnar séu á réttu formi og að kaupandi skrái nafn og email og símanúmer.
+
+4.
+Skipulag vefsins - veftré:
+Á forsiðu er mynd af hótelinu og helstu upplýsingar.
+Í menu-borða efst er hægt að klikka á nokkrar undirsíður - myndagallerí, leiðarlýsing og saga hótelsins.
+Á forsíðu er áberandi takki sem heitir "bóka" og leiðir mann inn á bókunarsíðu.
+
+5.
+Uppdráttur - skissa af skipulagi og útliti vefsíðu.
+skissa af útliti forsíðu, sjá skissa_af_forsíðu.jpg
+
