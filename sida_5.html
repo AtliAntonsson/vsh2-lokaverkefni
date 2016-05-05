@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <!-- hausinn er þa sem sést uppi efst á vafranum -->
+    <head>
+        <meta charset="utf-8">
+        <title>Hótel Þorskavík</title>
+        <link rel="stylesheet" href="stilsida.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Didact Gothic:400,500,700">
+    </head>
+
+
+    <!-- body er það sem birtist inni í vafraraglugganum -->
+    <body class="body">
+
+        <!-- header - fyrirsögn heimasíðunnar -->
+       <header class="header">
+          <h1>Bóka núna!</h1>
+       </header>
+       
+       <!-- efnisyfirlit -->
+     <div class="efnisyfirlit">
+            <ul>
+                <li><a href="index.html">Heim</a></li>
+                <li><a href="sida_2.html">Herbergi</a></li>
+                <li><a href="sida_3.html">Saga hótelsins</a></li>
+                <li><a href="sida_4.html">Leiðarlýsing</a></li>
+                <li><a href="sida_5.html">Bóka núna!</a></li>
+            </ul>
+        </div>
+
+        <!-- section er meginmál, innan þess geta verið ólíkar greinar/box-->
+        <section class="meginmal">
+           <article >
+            <h2>Til að bóka þarftu bara að<br>1. velja dagsetningar<br>2. svo þarftu að fylla inn nauðsynlegar persónulegar upplýsingar og greiðsluupplýsingar<br>3. loks ýta á bóka.</h2>
+            <form>
+            <fieldset class="skraning">
+              <legend>Bóka</legend>
+              
+              <label>
+                  Nafn
+                  <br>
+                  <input type="text" name="nafn" placeholder="Fullt nafn" required>
+              </label>
+              <br>
+              <label>
+                  Tölvupóstur
+                  <br>
+                  <input type="email" name="Tölvupóstur" placeholder="email"required>
+              </label>
+              <br>
+              <label>
+                  <input type="checkbox" name="fréttabréf"> Fá fréttabréf sent
+              </label>
+              <fieldset class="takki">
+                <input class="btn" type="submit" name="submit" value="bóka">
+              </fieldset>
+            </fieldset>
+            
+        </form>
+           </article>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div>
+             email: info@thorskavikhotel.is
+             <br>sími: (+354) 5812345
+            </div>
+        </footer>
+
+    </body>
+</html>
