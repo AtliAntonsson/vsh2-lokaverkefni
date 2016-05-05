@@ -1,15 +1,62 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head> <!-- hausinn er þa sem sést uppi efst á vafranum -->
 	<meta charset ="UTF-8">
-	<title>Project</title>
+	<title>Hótel Þorskavík</title>
+	<link rel="stylesheet" href="stilsida.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Didact Gothic:400,500,700">
 </head>
-<body>
 
-	<h1>About</h1>
-	<h2>Revision four</h2>
-	<p>Atli fatli í hjólastjól</p>
-	<p>halló skralló skrifað á github</p>
+<body class="body"> <!-- body er það sem birtist inni í vafraraglugganum -->
 
-</body>
+	 <!-- header - fyrirsögn heimasíðunnar -->
+	   <header class="header">
+		  <h1><strong>Hótel Þorskavík</strong>
+		  <br>Sleep with the fishes</h1><!-- slagorð hótelsins -->
+	   </header>
+
+	  <!-- efnisyfirlit -->
+	   <div class="efnisyfirlit">
+            <ul>
+                <li><a href="index.html">Heim</a></li>
+                <li><a href="sida_2.html">Herbergi</a></li>
+                <li><a href="sida_3.html">Saga hótelsins</a></li>
+                <li><a href="sida_4.html">Leiðarlýsing</a></li>
+                <li><a href="sida_5.html">Bóka núna!</a></li>
+            </ul>
+        </div>
+
+
+        <!-- section er meginmál, innan þess geta verið ólíkar greinar/box-->
+        <section class="meginmal group">
+
+    	   <article class="col-2-3">
+    	   		  <img src="hotel.jpg" alt="Hótel Þorskavík">
+    		      <h2>Hótel Þorskavík</h2>
+                  <p>Allskonar almennt um hótelið - Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið</p>
+    	   </article>
+
+
+           <aside class="col-1-3">
+                <div class="auglysing">
+                <div class="innihald">
+                    <h3 >Það er bæði einfalt og þægilegt að bóka herbergi beint hér á vefsíðunni okkar.</h3>
+                    <a href="sida_5.html">
+                    <button class="thoughtbot">Bóka núna!</button>
+                    </a> 
+                </div><!-- innihald endar -->
+            </div><!-- auglýsing endar -->
+           </aside>
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+    	    <div>
+    	       email: info@thorskavikhotel.is
+    	       <br>sími: (+354) 5812345
+            </div>
+        </footer>
+
+	</body>
 </html>
