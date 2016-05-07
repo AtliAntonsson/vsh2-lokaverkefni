@@ -1,37 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang ="is">
 <head> <!-- hausinn er þa sem sést uppi efst á vafranum -->
 	<meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hótel Þorskavík</title>
 	<link rel="stylesheet" href="stilsida.css">
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Didact Gothic:400,500,700">
 </head>
 
-<body class="body"> <!-- body er það sem birtist inni í vafraraglugganum -->
+<body> <!-- body er það sem birtist inni í vafraraglugganum -->
 
-	 <!-- header - fyrirsögn heimasíðunnar -->
-	   <header class="header">
-		  <h1><strong>Hótel Þorskavík</strong>
-		  <br>Sleep with the fishes</h1><!-- slagorð hótelsins -->
-	   </header>
+    <input type="checkbox" id="toggle">
+    <label for="toggle">&#9776;</label>
+    <!-- label er sýnilegur í -48em skjástærð -->
 
-	  <!-- efnisyfirlit -->
-	   <div class="efnisyfirlit">
-            <ul>
-                <li><a href="index.html">Heim</a></li>
-                <li><a href="sida_2.html">Herbergi</a></li>
-                <li><a href="sida_3.html">Saga hótelsins</a></li>
-                <li><a href="sida_4.html">Leiðarlýsing</a></li>
-                <li><a href="sida_5.html">Bóka núna!</a></li>
-            </ul>
-        </div>
-
+	<!-- header - fyrirsögn heimasíðunnar -->
+	<header class="header">
+	   <h1><strong>Hótel Þorskavík</strong>
+       <br>Sleep with the fishes</h1><!-- slagorð hótelsins -->
+	   
+	   <!-- efnisyfirlit -->
+	   <nav class="efnisyfirlit">
+                <ul class="topmenu  group">
+                    <li><a href="index.html">Heim</a></li>
+                    <li><a href="sida_2.html">Herbergi</a></li>
+                    <li><a href="sida_3.html">Saga hótelsins</a></li>
+                    <li><a href="sida_4.html">Leiðarlýsing</a></li>
+                    <li><a href="sida_5.html">Bóka núna!</a></li>
+                </ul>
+        </nav>
+    </header>
 
         <!-- section er meginmál, innan þess geta verið ólíkar greinar/box-->
         <section class="meginmal group">
 
     	   <article class="col-2-3">
-    	   		  <img src="hotel.jpg" alt="Hótel Þorskavík">
+    	   		  <img src="hotel_width_500px.jpg" alt="Hótel Þorskavík">
     		      <h2>Hótel Þorskavík</h2>
                   <p>Allskonar almennt um hótelið - Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið. Allskonar almennt um hótelið</p>
     	   </article>
