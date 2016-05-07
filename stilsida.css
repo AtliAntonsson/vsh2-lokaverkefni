@@ -16,7 +16,8 @@
 	border-radius: 5px;
 	padding: 0;
 	width: 960px;
-	background-image: url("ocean.jpg");
+	/*background-image: url("ocean.jpg");
+	background-repeat: no-repeat;*/
 }
 .header {
 	margin: 0;
@@ -86,6 +87,7 @@
 .herbergi {
 	text-align: center;
 	font-size: 30px;
+	margin-left: 30px;
 }
 .skraning {
 	border: 2px solid #4169e1;
@@ -126,26 +128,70 @@ a {
   Efnisyfirlit
   ========================================
 */
-.efnisyfirlit ul {
-	margin: 0;
-	border: 0;
-	padding: 0 0 0 60px;
-	text-transform: uppercase;
-	font-weight: bold;
+.input {
+  display: none;
 }
-.efnisyfirlit li {
-	display: inline-block;
-	background: #b0e0e6;
+label {
+  position: fixed;
+  top: .5em;
+  right: .5em;
+  border: 6px double #999;
+  border-radius: 50%;
+  color: #000;
+  cursor: pointer;
+  display: block;
+  font-size: 1.5em;
+  text-align: right;
+  padding: .2em .4em;
+  transition: all .4s ease;
+  background-color: #eee;
 }
-.efnisyfirlit a {
-	background: #b0e0e6;
-	border: 3px solid #4169e1;
-	border-radius: 5px;
-	padding: 12px 20px;
-	text-decoration: none;
+input:checked + label {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+  color: #eff;
 }
-.efnisyfirlit a:hover {
-	background: #4169e1;
+header nav {
+  position: fixed;
+  top: 4.4em;
+  right: -16em;   /* þegar input er ekki checked*/
+  width: 15em;
+  /* max-height: 0;*/
+  background: #555;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+input:checked ~ header nav {
+  right: 1em;
+  transition: all 1s ease;
+}
+.topmenu {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.topmenu li {
+  list-style-type: none;
+  display: inline-block;
+  padding: .5em 1em;
+}
+.topmenu a {
+  display: block;
+  background: #555;
+  border-radius: 15%;
+  color: #fff;
+  padding: .6em 1em;
+  text-decoration: none;
+  text-align: center;
+  border-bottom: 1px solid #999;
+  transition-property: background, color;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.topmenu a:hover {
+  background: #b0e0e6;
+  color: red;
 }
 
 
@@ -196,4 +242,25 @@ a {
     left: 0px;
     top: 0px;
   }
+}
+
+/*
+  ========================================
+  Mobile-up - Responsive web design - breakpoints 30em - 48em - 60em
+  ========================================
+*/
+/*Efnisyfirlitið breytist í fellilista þegar skjásstærð vafrans
+ er undir 48em (760px)*/
+@media screen and (min-width: 48em)  {
+label {
+    display: none;
+  }
+header nav {
+  position: static;
+  width: 100%;
+  transition: 0;
+}
+.topmenu li {
+    width: 12%;
+}
 }
