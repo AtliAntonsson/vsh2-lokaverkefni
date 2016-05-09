@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="is">
     <!-- hausinn er þa sem sést uppi efst á vafranum -->
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Leiðarlýsing - Hótel Þorskavík</title>
         <link rel="stylesheet" href="stilsida.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Didact Gothic:400,500,700">
@@ -12,27 +13,45 @@
     <!-- body er það sem birtist inni í vafraraglugganum -->
     <body class="body">
 
+        <input class="fellilisti" type="checkbox" id="toggle">
+        <label class="takki" for="toggle">&#9776;</label>
+        <!-- label er sýnilegur í -48em skjástærð -->
+
         <!-- header - fyrirsögn heimasíðunnar -->
        <header class="header">
-          <h1>Leiðarlýsing</h1>
-       </header>
+       <img class="logo" src="logo.png" alt="Hótel Þorskavík">
+          <h1 class="col-2-3">Leiðarlýsing</h1>
        
        <!-- efnisyfirlit -->
-     <div class="efnisyfirlit">
+        <nav class="efnisyfirlit">
             <ul class="topmenu  group">
                 <li><a href="index.html">Heim</a></li>
                 <li><a href="sida_2.html">Herbergi</a></li>
-                <li><a href="sida_3.html">Saga hótelsins</a></li>
-                <li><a href="sida_4.html">Leiðarlýsing</a></li>
-                <li><a href="sida_5.html">Bóka núna!</a></li>
+                <li><a href="sida_3.html">Sagan</a></li>
+                <li><a href="sida_4.html">Kort</a></li>
+                <li><a href="sida_5.html">Bóka</a></li>
             </ul>
-        </div>
+        </nav>
+        </header>
 
         <!-- section er meginmál, innan þess geta verið ólíkar greinar/box-->
-        <section class="meginmal">
-           <article>
+        <section class="meginmal group">
+
+          <aside class="col-1-3">
+                <div class="auglysing">
+                <div class="innihald">
+                    <h3 >Það er bæði einfalt og þægilegt að bóka herbergi beint hér á vefsíðunni okkar.</h3>
+                    <a href="sida_5.html">
+                    <button class="thoughtbot">Bóka núna!</button>
+                    </a> 
+                </div><!-- innihald endar -->
+            </div><!-- auglýsing endar -->
+           </aside>
+
+           <article class="col-2-3">
               <h2>Leiðarlýsing</h2>
-              <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </p>
+              <p>Frá Reykjavík er keyrt á þjóðvegi nr. 1 í norður. 35 km eftir að þið farið gegnum Borgarnes beygið þið til hægri á þjóðveg 66. Þið fylgið honum yfir heiðina og gegnum skarðið. Skömmu eftir að keyrt er framhjá Búrfelli er beygt inn á afleggjara á vinstri hönd. Þá er komið inn á malarveg og honum er fylgt í um 300km þangað til mynni Þorskafjarðar blasir við og þá er auðvelt að rata restina af leiðinni.</p>
+              <h2>Kort</h2>
                <img src="kort.jpg" alt="Kort">
            </article>
 
@@ -45,6 +64,23 @@
              <br>sími: (+354) 5812345
             </div>
         </footer>
-
+        
+        <!-- Social Media Buttons -->
+        <div class="sMedia">
+          <ul>
+            <li>
+              <a href="http://www.twitter.com" title="Twitter"><div class="twitter"> </div></a>
+            </li>
+            <li>
+              <a href="http://www.facebook.com" title="Facebook"><div class="facebook"> </div></a>
+            </li>
+            <li>
+              <a href="http://www.pinterest.com" title="Pinterest"><div class="pinterest"> </div></a>
+            </li>
+            <li>
+              <a href="http://www.google.com" title="Google"><div class="google"> </div></a>
+            </li>
+          </ul>
+        </div>
     </body>
 </html>
