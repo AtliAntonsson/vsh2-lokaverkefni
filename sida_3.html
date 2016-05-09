@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="is">
     <!-- hausinn er þa sem sést uppi efst á vafranum -->
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Sagan - Hótel Þorskavík</title>
         <link rel="stylesheet" href="stilsida.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Didact Gothic:400,500,700">
@@ -12,32 +13,49 @@
     <!-- body er það sem birtist inni í vafraraglugganum -->
     <body class="body">
 
+        <input class="fellilisti" type="checkbox" id="toggle">
+        <label class="takki" for="toggle">&#9776;</label>
+        <!-- label er sýnilegur í -48em skjástærð -->
+
         <!-- header - fyrirsögn heimasíðunnar -->
        <header class="header">
-          <h1>Saga hótelsins</h1>
-       </header>
+       <img class="logo" src="logo.png" alt="Hótel Þorskavík">
+          <h1 class="col-2-3">Saga hótelsins</h1>
        
       <!-- efnisyfirlit -->
-     <div class="efnisyfirlit">
+        <nav class="efnisyfirlit">
             <ul class="topmenu  group">
                 <li><a href="index.html">Heim</a></li>
                 <li><a href="sida_2.html">Herbergi</a></li>
-                <li><a href="sida_3.html">Saga hótelsins</a></li>
-                <li><a href="sida_4.html">Leiðarlýsing</a></li>
-                <li><a href="sida_5.html">Bóka núna!</a></li>
+                <li><a href="sida_3.html">Sagan</a></li>
+                <li><a href="sida_4.html">Kort</a></li>
+                <li><a href="sida_5.html">Bóka</a></li>
             </ul>
-        </div>
+        </nav>
+        </header>
 
         <!-- section er meginmál, innan þess geta verið ólíkar greinar/box-->
-        <section class="meginmal">
-           <article>
+        <section class="meginmal group">
+
+          <aside class="col-1-3">
+                <div class="auglysing">
+                <div class="innihald">
+                    <h3 >Það er bæði einfalt og þægilegt að bóka herbergi beint hér á vefsíðunni okkar.</h3>
+                    <a href="sida_5.html">
+                    <button class="thoughtbot">Bóka núna!</button>
+                    </a> 
+                </div><!-- innihald endar -->
+            </div><!-- auglýsing endar -->
+           </aside>
+
+           <article class="col-2-3">
               <h2>Gamla kaupfélagið</h2>
-              <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla </p>
-           </article>
-           <article>
+              <p>Í húsinu sem var byggt 1935 var til fjölda ára starfrækt kaupfélag Þorskavíkur. Þar versluðu allir íbúar þorpsins og nærliggjandi sveita og þar var hægt að kaupa allt mögulegt, frá  matvörum til leikfanga. Nú hafa tímarnir breyst og menn þurfa að keyra í önnur sveitarfélög til að versla.</p>
+              <br><img src="kaupmadur.png" alt="Gamla kaupfélagið"><br>
               <h2>Ungir eldhugar endurgera og breyta í hótel</h2>
-              <p>bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</p>
+              <p>En athafnamenn í Þorskavík sáu tækifæri til að nýta húsið í annan rekstur. Því var farið af stað árið 2010 að endurgera húsnæðið hátt og lágt og innrétta það sem hótel. Frá vormánuðum 2011 hefur svo Hótel Þorskavík boðið ferðalöngum allstaðar að úr heiminum næturgistingu og morgunerð. Og eins og lesa má í gestabókinní anddyrinu þá kunna menn svo sannarlega að meta hótelið og sjá ekki eftir því að dvelja eina nótt eða tvær í Þorskavík.</p>
            </article>
+
         </section>
 
         <!-- Footer -->
@@ -47,6 +65,23 @@
              <br>sími: (+354) 5812345
             </div>
         </footer>
-
+        
+        <!-- Social Media Buttons -->
+        <div class="sMedia">
+          <ul>
+            <li>
+              <a href="http://www.twitter.com" title="Twitter"><div class="twitter"> </div></a>
+            </li>
+            <li>
+              <a href="http://www.facebook.com" title="Facebook"><div class="facebook"> </div></a>
+            </li>
+            <li>
+              <a href="http://www.pinterest.com" title="Pinterest"><div class="pinterest"> </div></a>
+            </li>
+            <li>
+              <a href="http://www.google.com" title="Google"><div class="google"> </div></a>
+            </li>
+          </ul>
+        </div>
     </body>
 </html>
