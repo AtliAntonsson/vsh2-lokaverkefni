@@ -12,20 +12,18 @@
 }
 .body {
 	margin: 0 auto;
-	border: 5px solid #4169e1;
 	border-radius: 5px;
 	padding: 0;
 	width: 960px;
-	/*background-image: url("ocean.jpg");
-	background-repeat: no-repeat;*/
+	background-image: url("fjörður_breytt.jpg");
 }
 .header {
 	margin: 0;
 	border: 0;
 	padding: 20px 0px;
-	text-align: center;
+	text-align: left;
+	padding-left: 70px;
 	font-size: 20px;
-	background-color: #b0e0e6;
 }
 .efnisyfirlit {
 	margin: 0;
@@ -36,41 +34,37 @@
 .meginmal {
 	margin: 0 auto;
 	border: 0;
-	padding: 40px 20px 20px 20px;
-	background-color: #b0e0e6;
+	padding: 10px 20px 20px 20px;
+	background-color: #87ceeb;
 }
 .footer {
 	margin: 0;
 	border-top: 15px solid #4169e1;
 	padding: 0;
 	text-align: center;
-	background-color: #b0e0e6;
+	background-color: #87ceeb;
 }
 .col-2-3 {
 	display: inline-block;
 	margin: 0 auto;
 	padding: 10px 10px 0 10px;
-	width: 66.66%;
+	width: 55%;
 	float: left;
 }
 .col-1-3 {
 	display: inline:block;
-	border-left: 5px solid #4169e1;
 	margin: 0 auto;
 	padding: 15px;
-	width: 33.33%;
-	float: right;
-}
-.col-1 {
-	display: inline-block;
-	width: 45%;
+	width: 55%;
 	float: left;
-	margin: 0 20px;
 }
-.col-2 {
-	display: inline-block;
-	width: 45%;
-	float: left;
+.logo
+{
+	position:absolute;
+	top: 0;
+    left: 0;
+    height: 3em;
+    width: 3em;
 }
 .group:before, /*.clearfix til að lenda ekki container collapse þegar börnin fljóta*/
 .group:after {
@@ -87,7 +81,7 @@
 .herbergi {
 	text-align: center;
 	font-size: 30px;
-	margin-left: 30px;
+	padding-left: 30px;
 }
 .skraning {
 	border: 2px solid #4169e1;
@@ -96,8 +90,6 @@
 .takki {
 	border: 2px solid #4169e1;
 	border-radius: 5px;
-
-
 }
 .skjakynning{
 	width: 900px;
@@ -128,10 +120,10 @@ a {
   Efnisyfirlit
   ========================================
 */
-.input {
+.fellilisti {
   display: none;
 }
-label {
+.takki {
   position: fixed;
   top: .5em;
   right: .5em;
@@ -174,14 +166,14 @@ input:checked ~ header nav {
 .topmenu li {
   list-style-type: none;
   display: inline-block;
-  padding: .5em 1em;
+  padding: 0.5em 0.5em;
 }
 .topmenu a {
   display: block;
   background: #555;
   border-radius: 15%;
   color: #fff;
-  padding: .6em 1em;
+  padding: 0.5em 0.5em;
   text-decoration: none;
   text-align: center;
   border-bottom: 1px solid #999;
@@ -194,7 +186,6 @@ input:checked ~ header nav {
   color: red;
 }
 
-
 /*
   ========================================
   Auglýsing
@@ -205,7 +196,7 @@ input:checked ~ header nav {
   width: 100%;
   height: 10em;
   margin-top: 1em;
-  background-color: #eee;
+  background-color: #4169e1;
   border-radius: .4em;
   box-shadow: inset 0 0 3em #999;
   overflow: hidden;
@@ -222,7 +213,7 @@ input:checked ~ header nav {
   position: relative;
   background-color: red;
   color: white;
-  animation: popp 5s 1;
+  animation: popp 2s 1;
   animation-direction: alternate;
 }
 .thoughtbot:hover {
@@ -244,15 +235,94 @@ input:checked ~ header nav {
   }
 }
 
+
 /*
   ========================================
-  Mobile-up - Responsive web design - breakpoints 30em - 48em - 60em
+  Social buttons
+  ========================================
+*/
+
+.sMedia {
+  position: relative;
+  height: 3em;
+  width: 100%;
+}
+.sMedia ul {
+  list-style-type: none;
+  width: 3em;
+  margin: 0;
+  padding: 0;
+}
+.sMedia a {
+  display: inline-block;
+  width: 23%;
+  padding: 0;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+  .sMedia li {
+    display: inline-block;
+  }
+.twitter {
+  position: relative;
+  height: 3em;
+  width: 3em;
+  background: rgb(22, 145, 190) url('img/logos.png') 0 0 no-repeat;
+  transition: all 1s ease;
+}
+.facebook {
+  position: relative;
+  height: 3em;
+  width: 3em;
+  background: rgb(22, 107, 162) url('img/logos.png') 0 -3.3em no-repeat;
+  transition: all 1s ease;
+}
+.pinterest {
+  position: relative;
+  height: 3em;
+  width: 3em;
+  background: rgb(233, 147, 26) url('img/logos.png') 0 -6em no-repeat;
+  transition: all 1s ease;
+}
+.google {
+  position: relative;
+  height: 3em;
+  width: 3em;
+  background: rgb(208, 101, 3) url('img/logos.png') 0 -9em no-repeat;
+  transition: all 1s ease;
+}
+/****************************** hover effects ******************/
+.twitter:hover {
+  background: rgb(151, 218, 242) url('img/logos.png') 0 0 no-repeat;
+  transition: all 1s ease;
+  width: 4em;
+}
+.facebook:hover {
+  transition: all 1s ease;
+  width: 4em;
+  background: #32BEED url('img/logos.png') 0 -3.3em no-repeat;
+}
+.pinterest:hover {
+  transition: all 1s ease;
+  width: 4em;
+  background: #FAC88E url('img/logos.png') 0 -6em no-repeat;
+}
+.google:hover {
+  transition: all 1s ease;
+  width: 4em;
+  background: #F5C2A9 url('img/logos.png') 0 -9em no-repeat;
+}
+
+/*
+  ========================================
+  Mobile-up - Responsive web design
   ========================================
 */
 /*Efnisyfirlitið breytist í fellilista þegar skjásstærð vafrans
  er undir 48em (760px)*/
 @media screen and (min-width: 48em)  {
-label {
+.takki {
     display: none;
   }
 header nav {
@@ -262,5 +332,50 @@ header nav {
 }
 .topmenu li {
     width: 12%;
+}
+
+/*undir 48em eiga dálkarnir tveir að verað að einum dálk
+og auglýsingin að vera efst, beint fyrir neðan efnisyfirlitið*/
+.col-2-3 {
+	display: inline-block;
+	margin: 0 auto;
+	padding: 10px 10px 0 10px;
+	width: 66.66%;
+	float: left;
+}
+.col-1-3 {
+	display: inline:block;
+	margin: 0 auto;
+	padding: 15px;
+	width: 33.33%;
+	float: right;
+}
+
+.logo
+{
+	position: relative;
+	display: inline-block;
+	width: 70px;
+}
+/*Header er í miðjunni í skjástærð yfir 48em,
+en í minni skjástærð er text-align: left*/
+.header {
+	text-align: center;
+	padding-left: 0;
+}
+}
+
+@media screen and (min-width: 60em)  {
+.sMedia {
+    position: absolute;
+    top: 2em;
+    left: 0;
+    height: 9em;
+    width: 3em;
+}
+.sMedia a {
+    display: inline-block;
+    width: 100%;
+    color: white;
 }
 }
